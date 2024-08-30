@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tuncbank.accountScreenController">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="300.0">
+               <children>
+                  <Pane prefHeight="600.0" prefWidth="180.0" styleClass="pink-background" stylesheets="@../../../Styles/accountScreen.css">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="87.0" fitWidth="131.0" layoutX="65.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/tuncBankIcon.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="-11.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TUNC BANK" textAlignment="CENTER" wrappingWidth="239.0">
+                           <font>
+                              <Font name="Berlin Sans FB" size="31.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="withdrawMoneyButton" layoutX="19.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#withdrawOnMouseClicked" onMouseEntered="#withdrawMouseEntered" onMouseExited="#withdrawMouseExited" prefHeight="49.0" prefWidth="192.0" stylesheets="@../../../Styles/accountScreen.css" text=" Withdraw Money">
+                           <font>
+                              <Font name="Franklin Gothic Demi" size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="white-background" />
+                              <String fx:value="curve-20" />
+                           </styleClass>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <graphic>
+                              <ImageView fx:id="withdrawIcon" fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/withdrawMoney.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="depositMoneyButton" layoutX="20.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#depositOnMouseClicked" onMouseEntered="#depositOnMouseEntered" onMouseExited="#depositOnMouseExited" prefHeight="49.0" prefWidth="192.0" stylesheets="@../../../Styles/accountScreen.css" text=" Deposit Money">
+                           <font>
+                              <Font name="Franklin Gothic Demi" size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="white-background" />
+                              <String fx:value="curve-20" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fx:id="depositIcon" fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/depositMoney.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="moneyTransferButton" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#moneyTransferOnMouseClicked" onMouseEntered="#moneyTransferOnMouseEntered" onMouseExited="#moneyTransferOnMouseExited" prefHeight="49.0" prefWidth="192.0" stylesheets="@../../../Styles/accountScreen.css" text=" Money Transfer">
+                           <font>
+                              <Font name="Franklin Gothic Demi" size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="white-background" />
+                              <String fx:value="curve-20" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fx:id="exchangeIcon" fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/exchangeMoney.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="PaymentsButton" layoutX="19.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#paymentsOnMouseClicked" onMouseEntered="#paymentsOnMouseEntered" onMouseExited="#paymentsOnMouseExited" prefHeight="49.0" prefWidth="192.0" stylesheets="@../../../Styles/accountScreen.css" text="  Payments">
+                           <font>
+                              <Font name="Franklin Gothic Demi" size="16.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="white-background" />
+                              <String fx:value="curve-20" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fx:id="paymentsIcon" fitHeight="37.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/payment.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <HBox prefHeight="260.0" prefWidth="840.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="770.0">
+                     <children>
+                        <Text layoutX="40.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Hi," wrappingWidth="22.13671875">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="nameSurnameText" layoutX="63.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[ACCOUNT NAME SURNAME]" wrappingWidth="227.13671875">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="40.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Accounts" wrappingWidth="100.0">
+                           <font>
+                              <Font name="Berlin Sans FB" size="15.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="140.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/dollarBalance.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="balanceText" layoutX="224.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[BALANCE]" wrappingWidth="172.13671875">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="49.0" fitWidth="37.0" layoutX="722.0" layoutY="550.0" onMouseClicked="#quitOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/logout.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="63.0" fitWidth="49.0" layoutX="703.0" layoutY="14.0" onMouseClicked="#settingsOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/settings.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

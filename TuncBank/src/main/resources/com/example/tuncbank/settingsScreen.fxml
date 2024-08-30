@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tuncbank.forLoginScreenComplements.settingsScreenController">
+    <children>
+        <HBox prefHeight="600.0" prefWidth="1000.0">
+            <children>
+                <Pane prefHeight="600.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../../../Styles/accountScreen.css">
+                    <children>
+                        <HBox prefHeight="232.0" prefWidth="150.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="236.0" prefWidth="250.0">
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="T" wrappingWidth="36.654296875">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="6.0" />
+                                            </VBox.margin>
+                                        </Text>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="U">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                        <ImageView fitHeight="129.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/tuncBankIcon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="N">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <VBox alignment="CENTER" layoutY="358.0" prefHeight="243.0" prefWidth="150.0">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B" wrappingWidth="36.654296875">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="6.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                        <Separator layoutX="-1.0" layoutY="342.0" prefHeight="4.0" prefWidth="150.0" style="-fx-background-color: white;" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" stylesheets="@../../../Styles/accountScreen.css">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <children>
+                        <Label fx:id="nameAndSurnameLabel" layoutX="74.0" layoutY="29.0" prefHeight="141.0" prefWidth="528.0" text="DEAR [NAME AND SURNAME]">
+                            <font>
+                                <Font name="Arial Black" size="20.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="6.0" layoutY="7.0" onMouseClicked="#backAccountOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../Images/backPage.png" />
+                            </image>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="112.0" layoutY="221.0" prefHeight="42.0" prefWidth="230.0" text="Your Telephone Number :">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="200.0" layoutY="279.0" prefHeight="42.0" prefWidth="150.0" text="Your Password : ">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                  <TextField fx:id="telephoneNoText" disable="true" layoutX="356.0" layoutY="231.0" prefHeight="32.0" prefWidth="160.0" />
+                  <TextField fx:id="passwordText" disable="true" layoutX="356.0" layoutY="284.0" prefHeight="32.0" prefWidth="160.0" text="***************" />
+                  <ImageView fx:id="changeTelephoneIcon" fitHeight="42.0" fitWidth="66.0" layoutX="537.0" layoutY="221.0" onMouseClicked="#telephoneUpdateOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/updateIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="changePasswordIcon" fitHeight="42.0" fitWidth="48.0" layoutX="537.0" layoutY="279.0" onMouseClicked="#passwordUpdateOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/updateIcon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                    </children>
+                </Pane>
+                <Pane prefHeight="600.0" prefWidth="150.0" styleClass="dark-blue" stylesheets="@../../../Styles/accountScreen.css">
+                    <children>
+                        <HBox prefHeight="364.0" prefWidth="150.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="232.0" prefWidth="153.0">
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="N" wrappingWidth="36.654296875">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="6.0" />
+                                            </VBox.margin>
+                                        </Text>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                        <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="4.0" prefWidth="150.0" styleClass="white-background" />
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N" wrappingWidth="36.654296875">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets left="6.0" />
+                                            </VBox.margin>
+                                        </Text>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="K">
+                                            <font>
+                                                <Font name="Arial Black" size="41.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <VBox alignment="CENTER" layoutY="353.0" prefHeight="250.0" prefWidth="150.0">
+                            <children>
+                                <ImageView fitHeight="129.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/tuncBankIcon.png" />
+                                    </image>
+                                </ImageView>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="T">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                </Text>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="U">
+                                    <font>
+                                        <Font name="Arial Black" size="41.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </VBox>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

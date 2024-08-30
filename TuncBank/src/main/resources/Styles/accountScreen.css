@@ -1,0 +1,57 @@
+.curve-20 {
+    -fx-background-radius: 20;
+}
+.curve-30 {
+    -fx-background-radius: 30;
+}
+.curve-50 {
+    -fx-background-radius: 50;
+}
+
+.white-background{
+    -fx-background-color: white;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.yellow-background{
+    -fx-background-color: #FFFF99;
+}
+
+.roseColour-background{
+    -fx-background-color: #40E0D0;
+}
+
+.pink-background{
+    -fx-background-color: #FFD1DC;
+}
+
+.purple-background{
+    -fx-background-color: #BDB2FE;
+}
+
+.blue-background{
+    -fx-background-color: #B9E5FF;
+}
+
+.red-background{
+    -fx-background-color: #FF5733;
+}
+.green-background{
+    -fx-background-color: #228B22;
+}
+
+.gray-background{
+    -fx-background-color: #D3D3D3;
+
+}
+.dark-blue{
+    -fx-background-color: #0A2472;
+    -fx-alignment: center;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0),10,0,0,10) ;
+}
